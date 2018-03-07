@@ -47,6 +47,7 @@ class Widget extends Component {
         showCloseButton={this.props.showCloseButton}
         fullScreenMode={this.props.fullScreenMode}
         badge={this.props.badge}
+        typing={this.props.typing}
       />
     );
   }
@@ -61,7 +62,8 @@ Widget.propTypes = {
   profileAvatar: PropTypes.string,
   showCloseButton: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
-  badge: PropTypes.number
+  badge: PropTypes.number,
+  typing: PropTypes.bool
 };
 
 export default connect()(Widget);

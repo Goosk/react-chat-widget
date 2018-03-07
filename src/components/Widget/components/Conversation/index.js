@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Messages from './components/Messages';
 import Sender from './components/Sender';
 import QuickButtons from './components/QuickButtons';
+import TypingPlaceholder from './components/TypingPlaceholder';
 import './style.scss';
 
 const Conversation = props =>
@@ -18,6 +19,7 @@ const Conversation = props =>
     <Messages
       profileAvatar={props.profileAvatar}
     />
+    <TypingPlaceholder active={props.typing} />
     <QuickButtons onQuickButtonClicked={props.onQuickButtonClicked} />
     <Sender
       sendMessage={props.sendMessage}
@@ -34,7 +36,8 @@ Conversation.propTypes = {
   profileAvatar: PropTypes.string,
   toggleChat: PropTypes.func,
   showCloseButton: PropTypes.bool,
-  disabledInput: PropTypes.bool
+  disabledInput: PropTypes.bool,
+  typing: PropTypes.bool
 };
 
 export default Conversation;

@@ -21,6 +21,7 @@ const WidgetLayout = props =>
         showChat={props.showChat}
         showCloseButton={props.showCloseButton}
         disabledInput={props.disabledInput}
+        typing={props.typing}
       />
     }
     {
@@ -43,7 +44,8 @@ WidgetLayout.propTypes = {
   showCloseButton: PropTypes.bool,
   disabledInput: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
-  badge: PropTypes.number
+  badge: PropTypes.number,
+  typing: PropTypes.bool
 };
 
 export default connect(store => ({
