@@ -5,6 +5,8 @@ import {
   addLinkSnippet,
   renderCustomComponent,
   toggleWidget,
+  openWidget,
+  closeWidget,
   toggleInputDisabled,
   dropMessages,
   setQuickButtons
@@ -17,6 +19,8 @@ export {
   addLinkSnippet,
   renderCustomComponent,
   toggleWidget,
+  openWidget,
+  closeWidget,
   toggleInputDisabled,
   dropMessages,
   setQuickButtons
